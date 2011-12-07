@@ -5,6 +5,9 @@ SampleApp::Application.routes.draw do
 
 	get "pages/about"
 
+	#Added the route for the Help page - Ex 3.5 q1
+	get "pages/help"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
