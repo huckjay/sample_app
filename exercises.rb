@@ -20,7 +20,7 @@ class Wai < String
 
 	def euro_mills
 		puts "Your Euro Millions main numbers are: " + (1..50).each.to_a.shuffle[1..5].sort.to_s
-		puts "Your Euro Millions lucky stars are: " + (1..12).each.to_a.shuffle[1..2].sort.to_s
+		puts "Your Euro Millions lucky stars are: " + (1..11).each.to_a.shuffle[1..2].sort.to_s
 	end
 
 	def lotto
