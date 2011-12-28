@@ -1,12 +1,15 @@
 SampleApp::Application.routes.draw do
-  get "pages/home"
+	
+	root :to => 'pages#home'
 
-  get "pages/contact"
+	match '/contact',	:to => 'pages#contact'
+	match '/about',		:to => 'pages#about'
+	match '/help',		:to => 'pages#help'
 
-	get "pages/about"
+end
 
-	#Added the route for the Help page - Ex 3.5 q1
-	get "pages/help"
+	 #Added the route for the Help page - Ex 3.5 q1
+#	 get "pages/help"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -64,4 +67,4 @@ SampleApp::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
-end
+
