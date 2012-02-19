@@ -7,7 +7,7 @@ SampleApp::Application.routes.draw do
 	match '/signup',  :to => 'users#new'
 	match '/contact',	:to => 'pages#contact'
 	match '/about',		:to => 'pages#about'
-	match '/help',		:to => 'pages#help'Michael Hartl, mhartl@example.com 
+	match '/help',		:to => 'pages#help'
 
 end
 
