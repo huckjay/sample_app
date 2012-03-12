@@ -6,6 +6,11 @@ gem 'sqlite3'
 gem "jquery-rails"
 gem 'gravatar_image_tag', '1.0.0.pre2'
 
+
+group :production do
+	gem 'pg'
+end
+
 group :development do
 	gem 'rspec-rails', '2.6.1'
 	gem 'annotate', '2.4.0'
